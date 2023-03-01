@@ -55,8 +55,8 @@ window.Web3Godot = {
     const contract = new ethers.Contract(tokenAddress, ERC20_ABI, moonbeamProvider);
     const balance = await contract.balanceOf(walletAddress);
     return {
-      walletAddress: walletAddress.toString(),
-      tokenAddress: tokenAddress.toString(),
+      wallet_address: walletAddress.toString(),
+      token_address: tokenAddress.toString(),
       balance: balance.toString()
     };
   }
